@@ -175,7 +175,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 3
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -192,13 +192,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216180854}
-  m_LocalRotation: {x: 0.011341664, y: -0.9904415, z: 0.0064235684, w: -0.1373163}
+  m_LocalRotation: {x: 0.011772628, y: -0.99768573, z: 0.0056069084, w: -0.06673254}
   m_LocalPosition: {x: -1.21, y: 1.38, z: 6.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.551, y: -195.793, z: -1.389}
+  m_LocalEulerAnglesHint: {x: 0.551, y: -187.66, z: -1.389}
 --- !u!114 &216180860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 23c4d91ca99084df58801aaa00c0d639, type: 2}
+  profile: {fileID: 11400000, guid: 39ba564fabe6847f1adc155802a30cc5, type: 2}
 --- !u!1001 &310626851
 Prefab:
   m_ObjectHideFlags: 0
@@ -2271,15 +2271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Radius: 0.4
-  m_SampleCount: 1
-  m_OcclusionIntensity: 1.5
-  m_Blur: 2
-  m_Downsampling: 2
-  m_OcclusionAttenuation: 1
-  m_MinZ: 0.01
-  m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
-  m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
 --- !u!81 &1886461011
 AudioListener:
   m_ObjectHideFlags: 0
