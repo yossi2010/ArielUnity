@@ -123,8 +123,10 @@
      <Compile Include="Assets\Scripts\ColoradoDrive.cs" />
      <Compile Include="Assets\Scripts\CustomSmoothFollow.cs" />
      <Compile Include="Assets\Scripts\RigidBodyIterations.cs" />
+     <Compile Include="Assets\Scripts\VELODYNE.cs" />
      <Compile Include="Assets\Scripts\navigation.cs" />
      <Compile Include="Assets\Scripts\terxurerender.cs" />
+     <Compile Include="Assets\mapCreator.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\ariel\data.txt" />

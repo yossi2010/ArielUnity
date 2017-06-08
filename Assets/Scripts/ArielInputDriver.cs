@@ -42,7 +42,7 @@ public class ArielInputDriver : MonoBehaviour
 						Steering = loc.x > 0 ? Steering+SteeringFixFactor*ang : Steering-SteeringFixFactor*ang ;
 						Throttle = loc.y > 0 ? Throttle-loc.y*ThrottleFixFactor : Throttle+loc.y*ThrottleFixFactor;
             driver.Drive(Throttle, Steering);
-						Sampledist=(int)float.Parse(data[1, i]);
+						Sampledist=(int)(float.Parse(data[1, i])/2);
             if (Time.time - Delay > float.Parse(data[0, i]))
             {
                 i++;
