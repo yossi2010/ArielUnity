@@ -1,0 +1,8 @@
+
+Library/*
+obj/*
+.vscode/*
+Temp/*
+*.autosave
+Assets/UnitiHDRI/*
+
