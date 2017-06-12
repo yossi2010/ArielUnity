@@ -62,13 +62,14 @@
  
          // Set the height of the camera
          transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
-		 if(Input.GetMouseButton(1)){
-			 myref.RotateAround(target.position,Vector3.up,Input.GetAxis("Mouse X"));
-			 myref.RotateAround(target.position,-myref.right,Input.GetAxis("Mouse Y"));
-		 }
-		 if(Input.GetAxis("Mouse ScrollWheel")>0)distance--;
-		 if(Input.GetAxis("Mouse ScrollWheel")<0)distance++;
-         // Always look at the target
-         transform.LookAt (target);
+        if (Input.GetMouseButton(1))
+        {
+            myref.RotateAround(target.position, Vector3.up, Input.GetAxis("Mouse X"));
+            myref.RotateAround(target.position, -myref.right, Input.GetAxis("Mouse Y"));
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0) distance--;
+        if (Input.GetAxis("Mouse ScrollWheel") < 0) distance++;
+        // Always look at the target
+        transform.LookAt (target);
      }
  }
