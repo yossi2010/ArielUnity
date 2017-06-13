@@ -1547,6 +1547,11 @@ MonoBehaviour:
   - {fileID: 54924189029275808}
   - {fileID: 54034196982616244}
   - {fileID: 54593532491587164}
+  hinges:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   steering:
   - {fileID: 153640920776894062}
   - {fileID: 153342337934164634}
@@ -1595,9 +1600,10 @@ MonoBehaviour:
   Sampledist: 0
   SteeringFixFactor: -0.005
   ThrottleFixFactor: 0.15
+  Timescale: 1
   LineSegmentResolution: 5
   StartingPoint: {x: 113.625, y: 0, z: 26.61839}
-  lm:
+  PathDrawingLayer:
     serializedVersion: 2
     m_Bits: 1024
 --- !u!114 &114321793944321654
