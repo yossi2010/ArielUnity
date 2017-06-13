@@ -49,6 +49,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArielM113Controller.cs" />
      <Compile Include="Assets\CubeJumper.cs" />
      <Compile Include="Assets\Kawaii_Tanks_Project\Kawaii_Tanks_Assets\Scripts\Armor_Collider_CS.cs" />
      <Compile Include="Assets\Kawaii_Tanks_Project\Kawaii_Tanks_Assets\Scripts\Barrel_Control_CS.cs" />
@@ -74,6 +75,8 @@
      <Compile Include="Assets\Kawaii_Tanks_Project\Kawaii_Tanks_Assets\Scripts\Wheel_Control_CS.cs" />
      <Compile Include="Assets\Kawaii_Tanks_Project\Kawaii_Tanks_Assets\Scripts\Wheel_Rotate_CS.cs" />
      <Compile Include="Assets\Kawaii_Tanks_Project\Kawaii_Tanks_Assets\Scripts\Wheel_Sync_CS.cs" />
+     <Compile Include="Assets\M113Controller.cs" />
+     <Compile Include="Assets\MomentOfInertiaChecker.cs" />
      <Compile Include="Assets\PBR Mini_Truck\Demo\DemoScripts\ChangeScene.cs" />
      <Compile Include="Assets\PBR Mini_Truck\Demo\DemoScripts\DisableButton.cs" />
      <Compile Include="Assets\PBR Mini_Truck\Demo\DemoScripts\InstantiateThings.cs" />

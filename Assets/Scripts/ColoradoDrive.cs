@@ -6,6 +6,7 @@ public class ColoradoDrive : MonoBehaviour
     public float MaxTorque = 400, Torque, steeringangle = 0;
     public float MaxSteer = 0.4f, VehicleWidth = 2, VehicleLength = 3;
     public Rigidbody[] joints;
+    public HingeJoint[] hinges;
     Transform myref;
     Rigidbody rb;
     float[] Theta={0,0};
@@ -17,6 +18,7 @@ public class ColoradoDrive : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        for (int i = 0; i < joints.Length; i++) hinges[i]=joints[i].GetComponent<HingeJoint>();
         myref=transform;
         rb=GetComponent<Rigidbody>();
     }
@@ -28,7 +30,6 @@ public class ColoradoDrive : MonoBehaviour
         steeringangle = -MaxSteer * Input.GetAxis("Horizontal");
         Throttle=Input.GetAxis("Vertical");
         if(Throttle!=0||steeringangle!=0)Drive(Throttle,steeringangle);
-
     }
     public void Drive(float Throttle,float Steer)
     {
@@ -36,10 +37,13 @@ public class ColoradoDrive : MonoBehaviour
         Torque = MaxTorque * Throttle;
         for (int i = 0; i < joints.Length; i++)
         {
+            float angvel=hinges[i].velocity;
+            if(Throttle<0&&angvel<0&&xVel>0) Torque=0;
+            if(Throttle>0&&angvel>0&&xVel<0) Torque=0;
+            joints[i].AddRelativeTorque(new Vector3(Torque, 0, 0), ForceMode.Force);
             // var tempmotor=joints[i].motor;
             // tempmotor.targetVelocity=Speed;
             // joints[i].motor=tempmotor;
-            joints[i].AddRelativeTorque(new Vector3(Torque, 0, 0), ForceMode.Force);
         }
         if (Steer >= 0) //turning right
         {

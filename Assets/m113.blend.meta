@@ -43,6 +43,8 @@ ModelImporter:
     100070: group_0_927
     100072: group_0_936
     100074: //RootNode
+    100076: group_0_005
+    100078: group_0_006
     400000: group_0_000
     400002: group_0_001
     400004: group_0_002
@@ -81,6 +83,8 @@ ModelImporter:
     400070: group_0_927
     400072: group_0_936
     400074: //RootNode
+    400076: group_0_005
+    400078: group_0_006
     2300000: group_0_000
     2300002: group_0_001
     2300004: group_0_002
@@ -119,6 +123,8 @@ ModelImporter:
     2300070: group_0_927
     2300072: group_0_936
     2300074: //RootNode
+    2300076: group_0_005
+    2300078: group_0_006
     3300000: group_0_000
     3300002: group_0_001
     3300004: group_0_002
@@ -157,6 +163,8 @@ ModelImporter:
     3300070: group_0_927
     3300072: group_0_936
     3300074: //RootNode
+    3300076: group_0_005
+    3300078: group_0_006
     4300000: group_0_004
     4300002: group_0_003
     4300004: group_0_001
@@ -195,6 +203,8 @@ ModelImporter:
     4300070: group_0_037
     4300072: group_0_002
     4300074: Cube
+    4300076: group_0_005
+    4300078: group_0_006
     7400000: Default Take
     9500000: //RootNode
   materials:
