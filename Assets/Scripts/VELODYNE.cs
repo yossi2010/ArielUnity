@@ -4,12 +4,12 @@ using System.IO;
 public class VELODYNE : MonoBehaviour
 {
     Transform myref;
-    public float timescale = 1;
+    public float Timescale = 1;
     public Transform emitter;
     Vector3 shootLaserDir = Vector3.zero;
     public float Range = 10, StartVerticalAngle = 2, VertAng = 26.8f, HorAng = 360, hz = 10, HorRes = 0.08f, NoOfScansPerFrame;
     public int lasercount = 64;
-    public bool DebugDraw = true, DebugDrawDots = false;
+    public bool DebugDraw = true, DebugDrawDots = false,DebugTime=false;
     float[] datacolumn;
 
     float ang = 0;
@@ -61,7 +61,8 @@ public class VELODYNE : MonoBehaviour
             myref.localEulerAngles = new Vector3(0, currentangle, 0);
 
         }
-        Time.timeScale = timescale;
+
+        if(DebugTime){Timescale=Timescale<=0?0.01f:Timescale;Time.timeScale = Timescale;}
         //debugging timescale	
     }
         void WriteData(float[] toWrite){

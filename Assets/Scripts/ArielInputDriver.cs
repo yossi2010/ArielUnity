@@ -12,6 +12,7 @@ public class ArielInputDriver : MonoBehaviour
     Vector3 TargetWP;
     public int Sampledist;
     public float SteeringFixFactor = 0, ThrottleFixFactor = 0,Timescale=1;
+    public bool DebugTime=false;
     public int LineSegmentResolution = 10;
     public Vector3 StartingPoint;
     public LayerMask PathDrawingLayer;
@@ -38,8 +39,8 @@ public class ArielInputDriver : MonoBehaviour
         TargetWP = new Vector3(float.Parse(data[4, 10]), 0, float.Parse(data[3, 10]));
     }
 void Update(){
-    Timescale=Timescale<0?0:Timescale;
-    Time.timeScale=Timescale;
+   if(DebugTime) {Timescale=Timescale<0?0:Timescale;
+    Time.timeScale=Timescale;}
 }
     // Update is called once per frame
     void FixedUpdate()
