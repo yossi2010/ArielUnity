@@ -20,6 +20,7 @@ public class ArielInputDriver : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         myref = transform;
         data = CSVReader.SplitCsvGrid(csv.text);
         // CSVReader.DebugOutputGrid( CSVReader.SplitCsvGrid(csv.text) ); 
@@ -27,15 +28,16 @@ public class ArielInputDriver : MonoBehaviour
         {
 
             RaycastHit hit1, hit2;
-            Physics.Raycast(new Vector3(float.Parse(data[3, j * LineSegmentResolution]), 100, float.Parse(data[4, j * LineSegmentResolution])) + StartingPoint,
+            
+            Physics.Raycast(new Vector3(float.Parse(data[3, j * LineSegmentResolution]), 100, float.Parse(data[4, j * LineSegmentResolution])) ,
                 Vector3.down, out hit1, 101, PathDrawingLayer);
-            Physics.Raycast(new Vector3(float.Parse(data[3, (j + 1) * LineSegmentResolution]), 100, float.Parse(data[4, (j + 1) * LineSegmentResolution])) + StartingPoint, Vector3.down, out hit2, 101, PathDrawingLayer);
+            Physics.Raycast(new Vector3(float.Parse(data[3, (j + 1) * LineSegmentResolution]), 100, float.Parse(data[4, (j + 1) * LineSegmentResolution])) , Vector3.down, out hit2, 101, PathDrawingLayer);
 
-            Debug.DrawLine(new Vector3(float.Parse(data[3, j * LineSegmentResolution]), hit1.point.y + 0.4f, float.Parse(data[4, j * LineSegmentResolution])) + StartingPoint,
-             new Vector3(float.Parse(data[3, (j + 1) * LineSegmentResolution]), hit2.point.y + 0.4f, float.Parse(data[4, (j + 1) * LineSegmentResolution])) + StartingPoint,
+            Debug.DrawLine(new Vector3(float.Parse(data[3, j * LineSegmentResolution]), hit1.point.y + 0.4f, float.Parse(data[4, j * LineSegmentResolution])) ,
+             new Vector3(float.Parse(data[3, (j + 1) * LineSegmentResolution]), hit2.point.y + 0.4f, float.Parse(data[4, (j + 1) * LineSegmentResolution])) ,
               Color.red, 50);
         }
-        TargetWP = new Vector3(float.Parse(data[4, 10]), 0, float.Parse(data[3, 10]));
+        TargetWP = new Vector3(float.Parse(data[4, 10]), 0, float.Parse(data[3, 10])) ;
     }
 void Update(){
     Timescale=Timescale<0?0:Timescale;
@@ -59,7 +61,7 @@ void Update(){
             if (Time.time - Delay > float.Parse(data[0, i]))
             {
                 i++;
-                TargetWP = new Vector3(float.Parse(data[3, i + Sampledist]), 0, float.Parse(data[4, i + Sampledist]))+StartingPoint;
+                TargetWP = new Vector3(float.Parse(data[3, i + Sampledist]), 0, float.Parse(data[4, i + Sampledist]));
             }
         }
         else driver.Drive(-driver.xVel * BreakForce, 0); //breaks on

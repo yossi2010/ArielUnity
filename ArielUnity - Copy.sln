@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArielUnity - Copy", "ArielUnity - Copy.csproj", "{4D62F0C6-65AF-DA41-F62D-E8A64B347346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArielUnity - Copy.Plugins", "ArielUnity - Copy.Plugins.csproj", "{0F608FD9-212E-3FB0-A0F8-9E39442B8B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArielUnity - Copy.Editor", "ArielUnity - Copy.Editor.csproj", "{BD1E3BAF-963E-DCB6-504E-A23CF7E45368}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D62F0C6-65AF-DA41-F62D-E8A64B347346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D62F0C6-65AF-DA41-F62D-E8A64B347346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D62F0C6-65AF-DA41-F62D-E8A64B347346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D62F0C6-65AF-DA41-F62D-E8A64B347346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F608FD9-212E-3FB0-A0F8-9E39442B8B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F608FD9-212E-3FB0-A0F8-9E39442B8B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F608FD9-212E-3FB0-A0F8-9E39442B8B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F608FD9-212E-3FB0-A0F8-9E39442B8B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1E3BAF-963E-DCB6-504E-A23CF7E45368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1E3BAF-963E-DCB6-504E-A23CF7E45368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1E3BAF-963E-DCB6-504E-A23CF7E45368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1E3BAF-963E-DCB6-504E-A23CF7E45368}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

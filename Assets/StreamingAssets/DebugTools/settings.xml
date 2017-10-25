@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DebugSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name />
+  <hideFlags>None</hideFlags>
+  <profileName>Default</profileName>
+  <generalMargin>10</generalMargin>
+  <stripFromRelease>false</stripFromRelease>
+  <consoleMaxLength>20</consoleMaxLength>
+  <consoleColour>
+    <r>0</r>
+    <g>1</g>
+    <b>0</b>
+    <a>1</a>
+  </consoleColour>
+  <commandChar>42</commandChar>
+  <reservedChar>64</reservedChar>
+  <trackerColour>
+    <r>0</r>
+    <g>1</g>
+    <b>0</b>
+    <a>1</a>
+  </trackerColour>
+  <graphMinColour>
+    <r>1</r>
+    <g>0</g>
+    <b>0</b>
+    <a>1</a>
+  </graphMinColour>
+  <graphMaxColour>
+    <r>0</r>
+    <g>1</g>
+    <b>0</b>
+    <a>1</a>
+  </graphMaxColour>
+  <graphMargin>10</graphMargin>
+  <graphLineSize>2</graphLineSize>
+  <graphUpdateFrequency>25</graphUpdateFrequency>
+  <useUniqueLogNames>false</useUniqueLogNames>
+  <postLogFiles>false</postLogFiles>
+  <debugMenuKey>Minus</debugMenuKey>
+  <consoleKey>Comma</consoleKey>
+  <trackerKey>Period</trackerKey>
+  <grapherKey>Slash</grapherKey>
+</DebugSettings>
